@@ -13,13 +13,16 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Leaflet Map Library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
     <script defer src="script.js"></script>
     <title>mapty // Map your workouts</title>
   </head>
   <body>
     <div class="sidebar">
-      <img src="logo.png" alt="Logo" class="logo" />
-
+      <h1 style="text-align: center; color:aqua; font-size: 3em;"><b>Map Location App</b></h1>
       <ul class="workouts">
         <form class="form hidden">
           <div class="form__row">
@@ -105,17 +108,6 @@
           </div>
         </li> -->
       </ul>
-
-      <p class="copyright">
-        &copy; Copyright by
-        <a
-          class="twitter-link"
-          target="_blank"
-          href="https://twitter.com/jonasschmedtman"
-          >Jonas Schmedtmann</a
-        >. Use for learning or your portfolio. Don't use to teach. Don't claim
-        as your own.
-      </p>
     </div>
 
     <div id="map"></div>
